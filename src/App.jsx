@@ -141,7 +141,7 @@ return (
             ) : (
               <ul>
                 {movieList.map((movie) => (
-                  <MovieCard key={movie.id} movie={movie} onWatchClick={handleWatchClick} /> // Add onWatchClick prop
+                  <MovieCard key={movie.id} movie={movie} onWatchClick={handleWatchClick} /> 
                 ))}
               </ul>
             )}

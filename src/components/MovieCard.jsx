@@ -15,7 +15,8 @@ const MovieCard = ({ movie, onWatchClick }) => {
           `https://image.tmdb.org/t/p/w500/${poster_path}` : '/no-movie.png'}
         alt={title}
       />
-      <div className='mt-4 text-white'>
+     <div className='flex flex-wrap gap-2 items-center justify-between w-full sm:w-auto  '>
+       <div className='mt-4 text-white'>
         {title}
       </div>
       <div className='content'>
@@ -27,13 +28,13 @@ const MovieCard = ({ movie, onWatchClick }) => {
         <p className='lang'>{original_language}</p> 
       </div>
       <button
-        className="border-2 border-b-cyan-600  absolute bottom-3 right-4 bg-black text-white px-2 py-2 rounded 
-        shadow-xs hover:shadow-cyan-500 text-shadow-md transition-all duration-300"
+        className="my-button "
         onClick={() => onWatchClick(movie)} 
       >
         Watch Trailer
       </button>
     </div>
+     </div>
   )
 }
 

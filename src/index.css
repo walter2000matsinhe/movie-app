@@ -162,3 +162,27 @@
     display: none;
   }
 }
+.my-button {
+  position: absolute;
+  bottom: 0.75rem;         /* bottom-3 */
+  right: 1rem;             /* right-4 */
+  
+  background-color: black; /* bg-black */
+  color: white;            /* text-white */
+  
+  padding: 0.2rem 0.4rem;  /* px-2 py-2 */
+  border-width: 2px;       /* border-2 */
+  border-bottom-color: #06b6d4; /* border-b-cyan-600 */
+  border-style: solid;
+  
+  border-radius: 0.25rem;  /* rounded */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-xs */
+  
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* text-shadow-md */
+  
+  transition: all 0.3s ease; /* transition-all duration-300 */
+}
+
+.my-button:hover {
+  box-shadow: 0 0 10px #06b6d4; /* hover:shadow-cyan-500 */
+}
