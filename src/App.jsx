@@ -2,7 +2,7 @@ import React from 'react'
 import Search from './components/Search'
 import Spinner from './components/Spinner';
 import MovieCard from './components/MovieCard';
-import WatchMovies from './watchMovies';
+import WatchMovies from './components/WatchMovies';
 import { useEffect,useState } from 'react';
 import { useDebounce } from 'react-use';
 import { updateSearchCount ,getTrendingMovies} from './appwrite';
